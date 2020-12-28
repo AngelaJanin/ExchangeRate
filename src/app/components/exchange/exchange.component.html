@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="card mb-3">
+
+        <!-- Header -->  
+        <div class="card-header">
+            <h3>&nbsp;&nbsp;Rate Exchange</h3>
+        </div>
+
+        <br>
+
+        <form [formGroup]="rateForm" class="form-inline" (ngSubmit)="getExchange(rateForm.value)">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="rate">
+                  Cambiar Rate
+                </label>
+                &nbsp;&nbsp;
+                <input id="rate" type="text" formControlName="rate">
+            </div>
+            <button class="button" type="submit" class="btn btn-primary mb-2">Enviar</button>
+        </form>
+
+        <!-- Body  -->
+        <div class="card-body">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="text-center">Rate</th>
+                        <th class="text-center">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exchange of exchanges">
+                        <td class="text-center">{{ exchange.rate }}</td>
+                        <td class="text-center">{{ exchange.value }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<br><br>
