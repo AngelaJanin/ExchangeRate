@@ -67,7 +67,7 @@
    font-size: 0.9375rem;
    font-weight: 400;
    line-height: 1.5;
-   color: #212529;
+   color: #f1f5fa;
    text-align: left;
    background-color: #d3f8ed ;
  }
@@ -95,7 +95,7 @@
  
  tr {
   font-weight: bold;
-  color: #009879;
+  color: #b4a9c2;
 }
 
  abbr[title],
@@ -491,8 +491,8 @@
  }
  
  tr {
-  background-color: #009879;
-  color:#3c3c3c;
+  background-color: #81222c;
+  color:#fbfbfb;
   text-align: left;
 }
 
@@ -501,17 +501,17 @@
 }
 
  tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: #ad9797;
 }
 
  tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid#721616;
 }
 
  .img-thumbnail {
    padding: 0.25rem;
    background-color: #fff;
-   border: 1px solid #dee2e6;
+   border: 1px solid  #721616;
    border-radius: 0.25rem;
    max-width: 100%;
    height: auto;
@@ -1877,16 +1877,16 @@
  .table td {
    padding: 0.75rem;
    vertical-align: top;
-   border-top: 1px solid #dee2e6;
+   border-top: 1px solid  #721616;
  }
  
  .table thead th {
    vertical-align: bottom;
-   border-bottom: 2px solid #dee2e6;
+   border-bottom: 2px solid  #721616;
  }
  
  .table tbody + tbody {
-   border-top: 2px solid #dee2e6;
+   border-top: 2px solid  #721616;
  }
  
  .table-sm th,
@@ -1895,12 +1895,12 @@
  }
  
  .table-bordered {
-   border: 1px solid #dee2e6;
+   border: 1px solid #721616;
  }
  
  .table-bordered th,
  .table-bordered td {
-   border: 1px solid #dee2e6;
+   border: 1px solid  #721616;
  }
  
  .table-bordered thead th,
@@ -2124,7 +2124,7 @@
  .table .thead-light th {
    color: #7b8a8b;
    background-color: #ecf0f1;
-   border-color: #dee2e6;
+   border-color:  #721616;
  }
  
  .table-dark {
@@ -4391,7 +4391,7 @@
    height: 0.5rem;
    color: transparent;
    cursor: pointer;
-   background-color: #dee2e6;
+   background-color:  #721616;
    border-color: transparent;
    border-radius: 1rem;
  }
@@ -4426,7 +4426,7 @@
    height: 0.5rem;
    color: transparent;
    cursor: pointer;
-   background-color: #dee2e6;
+   background-color:  #721616;
    border-color: transparent;
    border-radius: 1rem;
  }
@@ -4469,13 +4469,13 @@
  }
  
  .custom-range::-ms-fill-lower {
-   background-color: #dee2e6;
+   background-color:  #721616;
    border-radius: 1rem;
  }
  
  .custom-range::-ms-fill-upper {
    margin-right: 15px;
-   background-color: #dee2e6;
+   background-color:  #721616;
    border-radius: 1rem;
  }
  
@@ -4571,7 +4571,7 @@
  .nav-tabs .nav-item.show .nav-link {
    color: #7b8a8b;
    background-color: #fff;
-   border-color: #dee2e6 #dee2e6 #fff;
+   border-color:  #721616  #721616 #fff;
  }
  
  .nav-tabs .dropdown-menu {
@@ -5138,9 +5138,16 @@
  .card-header {
    padding: 0.75rem 1.25rem;
    margin-bottom: 0;
-   background-color: #3A957F ;
+   background-color: #490c0c ;
    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
  }
+
+ .card-input {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #490c0c ;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
  
  .card-header:first-child {
    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -6465,7 +6472,7 @@
        -ms-flex-pack: justify;
            justify-content: space-between;
    padding: 1rem 1rem;
-   border-bottom: 1px solid #dee2e6;
+   border-bottom: 1px solid  #721616;
    border-top-left-radius: calc(0.3rem - 1px);
    border-top-right-radius: calc(0.3rem - 1px);
  }
@@ -6501,7 +6508,7 @@
        -ms-flex-pack: end;
            justify-content: flex-end;
    padding: 0.75rem;
-   border-top: 1px solid #dee2e6;
+   border-top: 1px solid  #721616;
    border-bottom-right-radius: calc(0.3rem - 1px);
    border-bottom-left-radius: calc(0.3rem - 1px);
  }
@@ -7231,23 +7238,23 @@
  }
  
  .border {
-   border: 1px solid #dee2e6 !important;
+   border: 1px solid  #721616 !important;
  }
  
  .border-top {
-   border-top: 1px solid #dee2e6 !important;
+   border-top: 1px solid  #721616 !important;
  }
  
  .border-right {
-   border-right: 1px solid #dee2e6 !important;
+   border-right: 1px solid  #721616 !important;
  }
  
  .border-bottom {
-   border-bottom: 1px solid #dee2e6 !important;
+   border-bottom: 1px solid  #721616 !important;
  }
  
  .border-left {
-   border-left: 1px solid #dee2e6 !important;
+   border-left: 1px solid  #721616 !important;
  }
  
  .border-0 {
@@ -10793,7 +10800,7 @@
    }
    .table-bordered th,
    .table-bordered td {
-     border: 1px solid #dee2e6 !important;
+     border: 1px solid  #721616 !important;
    }
    .table-dark {
      color: inherit;
@@ -10802,11 +10809,11 @@
    .table-dark td,
    .table-dark thead th,
    .table-dark tbody + tbody {
-     border-color: #dee2e6;
+     border-color:  #721616;
    }
    .table .thead-dark th {
      color: inherit;
-     border-color: #dee2e6;
+     border-color:  #721616;
    }
  }
  

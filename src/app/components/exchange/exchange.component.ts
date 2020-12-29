@@ -24,21 +24,22 @@ export class ExchangeComponent implements OnInit {
       rate: ['', Validators.required]
     });
 
-    // La pantalla se inicializa con el rate default mnx
+    // La pantalla se inicializa con el rate default 'mnx'
     this.getExchanges();
   }
 
   // Consultar rate inicial
   getExchanges(){
+    this.exchanges = [];
     this.exchangeService.getExchanges().subscribe(
       res => {
-        var data = res['rates'];
-        for(var key in data){
-          var actual = new Exchange(key, String(data[key]));
-          this.exchanges.push(actual);
+        for(var key in res['rates']){
+          this.exchanges.push(new Exchange(key, String(res['rates'][key])));
         }
       },
-      err => console.error(err)
+      err => { 
+        alert("Rate inválido, intenta con uno distinto");
+      }
     )
   }
 
@@ -47,15 +48,12 @@ export class ExchangeComponent implements OnInit {
     this.exchanges = [];
     this.exchangeService.getExchange(rate['rate']).subscribe(
       res => {
-        var data = res['rates'];
-        for(var key in data){
-          var actual = new Exchange(key, String(data[key]));
-          this.exchanges.push(actual);
+        for(var key in res['rates']){
+          this.exchanges.push(new Exchange(key, String(res['rates'][key])));
         }
         this.rateForm.reset();
       },
       err => {
-        console.error(err)
         alert("Rate inválido, intenta con uno distinto");
         this.rateForm.reset();
         this.getExchanges();
